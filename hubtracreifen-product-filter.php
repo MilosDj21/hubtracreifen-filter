@@ -190,7 +190,7 @@ class ProductFilter
             <select style="margin-bottom:2rem;" name="selectedProdukttyp" onchange="this.form.submit()">
                 <option value="all" <?php echo $selectedProdukttyp === "all" ? "selected" : ""; ?>>Alle</option>
                 <option value="classic" <?php echo $selectedProdukttyp === "classic" ? "selected" : ""; ?>>Klassisch</option>
-                <option value="hubtrac2.0" <?php echo $selectedProdukttyp === "hubtrac2.0" ? "selected" : ""; ?>>Hubtrac 2.0</option>
+                <option value="hubtrac2-0" <?php echo $selectedProdukttyp === "hubtrac2-0" ? "selected" : ""; ?>>Hubtrac 2.0</option>
             </select>
 
             <!--Reifentyp-->
@@ -374,8 +374,8 @@ class ProductFilter
           case "classic":
             $this->produkttyp = 'classic';
             break;
-          case "hubtrac2.0":
-            $this->produkttyp = 'hubtrac2.0';
+          case "hubtrac2-0":
+            $this->produkttyp = 'hubtrac2-0';
             break;
         }
       }
