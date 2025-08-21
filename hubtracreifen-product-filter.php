@@ -200,9 +200,9 @@ class ProductFilter
                 <option value="on-off-road" <?php echo $selectedReifentyp === "on-off-road" ? "selected" : ""; ?>>On/Off Road</option>
                 <option value="regional" <?php echo $selectedReifentyp === "regional" ? "selected" : ""; ?>>Regional</option>
                 <option value="winter" <?php echo $selectedReifentyp === "winter" ? "selected" : ""; ?>>Winter</option>
-                <option value="highway" <?php echo $selectedReifentyp === "highway" ? "selected" : ""; ?>>Highway</option>
-                <option value="long-haul" <?php echo $selectedReifentyp === "long-haul" ? "selected" : ""; ?>>Long Haul</option>
-                <option value="urban" <?php echo $selectedReifentyp === "urban" ? "selected" : ""; ?>>Urban</option>
+                <option value="autobahn" <?php echo $selectedReifentyp === "autobahn" ? "selected" : ""; ?>>Autobahn</option>
+                <option value="langstrecke" <?php echo $selectedReifentyp === "langstrecke" ? "selected" : ""; ?>>Langstrecke</option>
+                <option value="stadtisch" <?php echo $selectedReifentyp === "stadtisch" ? "selected" : ""; ?>>Städtisch</option>
             </select>
 
             <input type="hidden" name="justsubmitted" value="true">
@@ -394,14 +394,14 @@ class ProductFilter
           case "winter":
             $this->reifentyp = 'winter';
             break;
-          case "highway":
-            $this->reifentyp = 'highway';
+          case "autobahn":
+            $this->reifentyp = 'autobahn';
             break;
-          case "long-haul":
-            $this->reifentyp = 'long-haul';
+          case "langstrecke":
+            $this->reifentyp = 'langstrecke';
             break;
-          case "urban":
-            $this->reifentyp = 'urban';
+          case "stadtisch":
+            $this->reifentyp = 'stadtisch';
             break;
         }
       }
