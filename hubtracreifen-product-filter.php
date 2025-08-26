@@ -225,15 +225,15 @@ class ProductFilter
             break;
           case "steer":
             $this->vehicle = 'truck';
-            $this->position = 'steer';
+            $this->position = 'lenkachse';
             break;
           case "drive":
             $this->vehicle = 'truck';
-            $this->position = 'drive';
+            $this->position = 'antriebsachse';
             break;
           case "trail":
             $this->vehicle = 'truck';
-            $this->position = 'trail';
+            $this->position = 'anhangerachse';
             break;
           case "loader-all":
             $this->vehicle = 'loader';
@@ -241,11 +241,11 @@ class ProductFilter
             break;
           case "loader-steer":
             $this->vehicle = 'loader';
-            $this->position = 'steer';
+            $this->position = 'lenkachse';
             break;
           case "loader-drive":
             $this->vehicle = 'loader';
-            $this->position = 'drive';
+            $this->position = 'antriebsachse';
             break;
           case "bus-all":
             $this->vehicle = 'bus';
@@ -253,11 +253,11 @@ class ProductFilter
             break;
           case "bus-steer":
             $this->vehicle = 'bus';
-            $this->position = 'steer';
+            $this->position = 'lenkachse';
             break;
           case "bus-drive":
             $this->vehicle = 'bus';
-            $this->position = 'drive';
+            $this->position = 'antriebsachse';
             break;
         }
       }
